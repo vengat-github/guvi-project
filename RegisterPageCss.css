@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://wallpaperaccess.com/full/632198.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    width: 400px;
+    height: auto;
+    background-color: transparent;
+    border: 2px solid rgb(133, 99, 56);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding-bottom: 30px;
+}
+
+h2{
+    color:white;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.user-box{
+    position: relative;
+    margin: 25px 0px;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.user-box label{
+    position:absolute;
+    top: 50%;
+    left: 5px;
+    transform:translate(: translateY(-50%);)
+    font-size: 1em;
+    pointer-events: none;
+    color: white;
+    transition: .5s;
+}
+
+.user-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0px 35px 0px 5px;
+    color: white;
+}
+
+input:focus ~label{
+    top: -5px;
+}
+
+span{
+    color: white;
+}
+
+button{
+    width: 80%;
+    height: 40px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    margin: 3vh;
+    cursor: pointer;
+}
+
+p{
+    color: white;
+}
+
